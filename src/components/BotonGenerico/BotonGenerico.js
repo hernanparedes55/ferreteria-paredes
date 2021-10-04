@@ -1,5 +1,5 @@
-import React from 'react'
-import './BotonGenerico.css'
+import React from 'react';
+import './BotonGenerico.css';
 
 function BotonGenerico({contenido, onClick}){
     return (
@@ -9,4 +9,4 @@ function BotonGenerico({contenido, onClick}){
     )
 }
 
-export default BotonGenerico
+export default BotonGenerico;

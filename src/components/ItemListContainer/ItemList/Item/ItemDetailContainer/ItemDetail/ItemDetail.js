@@ -1,9 +1,9 @@
 
 import React, { useState, useContext } from 'react';
-import {CartContext} from './../../../../../../context/CartContext'
-import ItemCount from './ItemCount/ItemCount'
-import './ItemDetail.css'
-import swal from 'sweetalert'
+import {CartContext} from '../../../../../../context/CartContext';
+import ItemCount from './ItemCount/ItemCount';
+import './ItemDetail.css';
+import swal from 'sweetalert';
 
 
 function ItemDetail({item={}}){

@@ -1,9 +1,11 @@
 import React, { useState, useContext } from 'react';
-import {CartContext} from './../../../context/CartContext';
-import {getFirestore} from '../../../firebase/firebaseService';
+import {CartContext} from '../../../context/CartContext';
+import {getFirestore} from '../../../firebase/firebaseConfig';
 import swal from 'sweetalert';
 import BotonGenerico from '../../BotonGenerico/BotonGenerico';
 import './FormularioCart.css';
+
+
 function FormularioCart() {
     const {cartList,costoTotal,cleanList}= useContext(CartContext)  
     const [buyer, setBuyer] = useState(initialState)

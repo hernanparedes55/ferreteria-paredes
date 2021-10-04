@@ -1,9 +1,9 @@
-import React,{useEffect , useState} from 'react'
-import ItemDetail from './ItemDetail/ItemDetail'
+import React,{useEffect , useState} from 'react';
+import ItemDetail from './ItemDetail/ItemDetail';
 import { useParams } from "react-router-dom";
-import { getFirestore } from '../../../../../firebase/firebaseService';
+import { getFirestore } from '../../../../../firebase/firebaseConfig';
 
-import './ItemDetailContainer.css'
+import './ItemDetailContainer.css';
 
 
 

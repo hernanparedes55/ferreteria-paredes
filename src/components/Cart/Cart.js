@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import {CartContext} from './../../context/CartContext';
+import {CartContext} from '../../context/CartContext';
 import {ImCross} from 'react-icons/im';
 import "./Cart.css";
 import FormularioCart from './FormularioCart/FormularioCart';
@@ -12,7 +12,7 @@ function Cart() {
         <>
         <h2>Carrito de compras</h2>
         {cartList.length === 0?
-            <p>El carrito esta vacio</p>
+            <p>El carrito está vacio</p>
         :
         <div>
             <BotonGenerico onClick={cleanList} contenido={"Vaciar el carrito"}/>
@@ -27,9 +27,9 @@ function Cart() {
                 <tbody>
                 {cartList.map(item => 
                     <tr key = {item.item.id}>
-                        <td><img src={item.item.imgDir} width='30px' height='40px' alt="" /><p>{item.item.nombre}</p></td>
+                        <td><img src={item.item.imgDir} width='30px' height='40px' alt="" /><p>{item.item.title}</p></td>
                         <td>{item.itemQ}</td>
-                        <td>${item.item.precio*item.itemQ}</td>
+                        <td>${item.item.price*item.itemQ}</td>
                         <td><ImCross className="remove"onClick={()=>{removeItem(item)}}/></td> 
                     </tr>
                 )}                        

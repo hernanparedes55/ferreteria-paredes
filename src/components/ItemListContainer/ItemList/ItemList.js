@@ -1,13 +1,11 @@
 import React,{useEffect,useState} from 'react';
-import Item from './Item/Item.jsx';
+import Item from './Item/Item.js';
 import { useParams } from "react-router-dom";
-import { getFirestore } from '../../../firebase/firebaseService';
+import { getFirestore } from '../../../firebase/firebaseConfig';
 import {collection, getDocs} from "firebase/firestore";
 
-
-import Spinner from 'react-bootstrap/Spinner'
-
-import './ItemList.css'
+import Spinner from 'react-bootstrap/Spinner';
+import './ItemList.css';
 
 function ItemList() {
     const [itemList, setItemList] = useState([]) // estado inicial array itemList vacio

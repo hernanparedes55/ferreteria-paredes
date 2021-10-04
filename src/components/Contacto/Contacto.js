@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import BotonGenerico from '../BotonGenerico/BotonGenerico';
 import './Contacto.css';
-import {getFirestore} from '../../firebase/firebaseService';
+import {getFirestore} from '../../firebase/firebaseConfig';
 import swal from 'sweetalert';
 
 function Contacto() {

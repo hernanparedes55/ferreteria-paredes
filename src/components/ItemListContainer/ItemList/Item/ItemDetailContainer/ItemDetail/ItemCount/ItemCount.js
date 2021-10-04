@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 
-import './ItemCount.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCartPlus} from '@fortawesome/free-solid-svg-icons'
-import {Link} from 'react-router-dom'
+import './ItemCount.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCartPlus} from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 
 
 
