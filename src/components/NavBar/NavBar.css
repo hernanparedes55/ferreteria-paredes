@@ -1,0 +1,31 @@
+.style-NavBar{
+    background-color: var(--blue);
+}
+
+.navbar .navbar-brand img{
+    width : 144px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    
+
+}
+.navegacion .link-nav{
+    text-decoration: none;
+    color: white;
+}
+.navegacion .link-nav:hover{
+    text-decoration: none;
+    color: var(--orange);
+}
+.navegacion .link-activo{
+    color: var(--orange);
+}
+
+.navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+    background-color: var(--grey);
+    
+}
