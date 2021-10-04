@@ -1,13 +1,22 @@
 .pie-de-pagina{
     margin-top: 100px;
+    background-color: var(--blue);
+    color:white;
+    align-items: center;
+    justify-content: center;
 }
 
 .pie-de-pagina a{
     color:rgb(128, 142, 143);
+    
 }
 .pie-de-pagina a:hover{
-    color:rgb(255,194,158);
+    color:var(--orange);
 }
 .pie-de-pagina p{
-    color:rgb(128, 142, 143)
+    color:rgb(128, 142, 143);
+}
+
+img{
+    width: 144px;
 }

@@ -28,7 +28,7 @@ export default function UseCartContext({ children }){
 
   //calcula el costo total
   const costoTotal=()=>{
-    return cartList.reduce((acumulador, valor)=>(acumulador + (valor.itemQ*valor.item.precio)),0)
+    return cartList.reduce((acumulador, valor)=>(acumulador + (valor.itemQ*valor.item.price)),0)
   }
 
 

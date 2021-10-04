@@ -33,6 +33,6 @@
 }
 .terminar-compra:hover{
     transform: scale(1.025);
-    color:rgb(255,194,158);
+    color: rgb(255,194,158);
     transition: 0.5s;
 }

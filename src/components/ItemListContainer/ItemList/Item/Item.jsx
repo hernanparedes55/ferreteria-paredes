@@ -7,13 +7,14 @@ import './Item.css';
 
 
 function Item({ prodData }) {
-    const {id, nombre, precio, imgDir} = prodData
+    const {id, title, description, price, imgDir} = prodData
     return(
                 <Card style={{ width: '18rem' }} className="col-md-4 card-prod">
-                    <Card.Img variant="top" src={imgDir} alt= {nombre} />
+                    <Card.Img variant="top" src={imgDir} alt= {title} />
                     <Card.Body>
-                        <Card.Title>{nombre}</Card.Title>
-                        <Card.Text>Precio: ${precio} <br/></Card.Text>
+                        <Card.Title>{title}</Card.Title>
+                        <Card.Text>{description} <br/></Card.Text>
+                        <Card.Text>Precio: ${price} <br/></Card.Text>                        
                         <BotonGenerico contenido={
                             <Link to={`/item/${id}`} className="text-decoration-none text-light" >
                             Detalles
