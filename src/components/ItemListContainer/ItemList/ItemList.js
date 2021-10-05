@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import Item from './Item/Item.js';
 import { useParams } from "react-router-dom";
 import { getFirestore } from '../../../firebase/firebaseConfig';
-import {collection, getDocs} from "firebase/firestore";
+// import {collection, getDocs} from "firebase/firestore";
 
 import Spinner from 'react-bootstrap/Spinner';
 import './ItemList.css';
@@ -16,13 +16,13 @@ function ItemList() {
     useEffect(() => {
         setLoading(true)
 
-            let db = getFirestore()
-            let itemsCollection = db.collection('items')
+            const db = getFirestore()
+            const itemsCollection = db.collection('items')
             const dbQuery = categoryId ?  itemsCollection.where('categoria', '==', categoryId) : itemsCollection
             dbQuery.get().then(resp => {
                 console.log(resp);
                 if (resp.size === 0) {
-                    console.log('No se encontro nada')
+                    console.log('No hay productos')
                 }else{
                 setItemList(resp.docs.map(item=> ({id: item.id, ...item.data()}) ))}
             })

@@ -33,8 +33,6 @@ function ItemCount(props) {
                         <label>{cantidad}</label>
                     <button type="button" className="btn-cant" onClick={subirCantidad}>+</button> <br/>
 
-
-
                     {
                     onAddTo ?
                     <button type="button" className="btn-agregar" onClick={()=> {onAdd(cantidad) ; setOnAddTo(false)}}>

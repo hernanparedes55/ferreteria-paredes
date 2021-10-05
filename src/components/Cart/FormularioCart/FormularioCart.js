@@ -30,6 +30,7 @@ function FormularioCart() {
                 icon:"success",
                 height: "340px"
             })
+            //actualizar el stock del producto
             
         })
         .catch(err=>console.log(err))
