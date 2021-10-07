@@ -19,9 +19,9 @@ return (
         <Nav.Link ><NavLink to="/products" className='link-nav'  exact activeClassName="link-activo">Productos</NavLink></Nav.Link>
 
         <NavDropdown title="Categorias" id="collasible-nav-dropdown" className='link-nav'  exact activeClassName="link-activo" >
-          <NavDropdown.Item><Nav.Link ><NavLink to="/category/Electricidad" className='link-nav'  exact activeClassName="link-activo"> Electricidad </NavLink></Nav.Link></NavDropdown.Item>
-          <NavDropdown.Item><Nav.Link ><NavLink to="/category/Sanitarios" className='link-nav'  exact activeClassName="link-activo"> Sanitarios </NavLink></Nav.Link></NavDropdown.Item>
-          <NavDropdown.Item><Nav.Link ><NavLink to="/category/Gas" className='link-nav'  exact activeClassName="link-activo"> Gas </NavLink></Nav.Link></NavDropdown.Item>
+          <NavDropdown.Item ><Nav.Link><NavLink to="/category/Electricidad" className='link-nav'  exact activeClassName="link-activo" > Electricidad </NavLink></Nav.Link></NavDropdown.Item>
+          <NavDropdown.Item><Nav.Link ><NavLink to="/category/Herramientas" className='link-nav'  exact activeClassName="link-activo"> Herramientas </NavLink></Nav.Link></NavDropdown.Item>
+          <NavDropdown.Item><Nav.Link ><NavLink to="/category/Jardineria" className='link-nav'  exact activeClassName="link-activo"> Jardineria </NavLink></Nav.Link></NavDropdown.Item>
           {/* <NavDropdown.Item href="#action/3.2">Sanitarios</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Cloacas</NavDropdown.Item> */}
           </NavDropdown>

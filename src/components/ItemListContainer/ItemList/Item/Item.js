@@ -12,7 +12,7 @@ function Item({ prodData }) {
                 <Card style={{ width: '18rem'}} className="col-md-5 card-prod">
                     <Card.Img variant="top" src={imgDir} alt= {title} />
                     <Card.Body>
-                        <Card.Title>{title}</Card.Title>
+                        <Card.Title style={{color:"var(--blue)"}}>{title}</Card.Title>
                         <Card.Text>{description} <br/></Card.Text>
                         <Card.Text>Precio: ${price} <br/></Card.Text> 
                         <Card.Text>Stock: {stock} <br/></Card.Text>                        

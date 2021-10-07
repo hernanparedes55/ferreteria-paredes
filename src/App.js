@@ -11,18 +11,19 @@ import CartContextProvider from './context/CartContext';
 import Contacto from './components/Contacto/Contacto';
 import Carousel from './components/carousel/Carousel';
 import React from 'react';
-// import { getFirestore } from "./firebase/firebaseConfig";
+import Nosotros from './components/Nosotros/Nosotros';
+//  import { getFirestore } from "./firebase/firebaseConfig";
 
 function App() {
-
+ 
+  
   return (
     
       <Router>
         <CartContextProvider>
           <div className="App">
             <NavBar/>
-            {/* <Carousel/> */}
-            {/* <Cards/> */}
+
             <Switch>
                 <Route exact path='/'>
                   <Carousel/>
@@ -41,8 +42,12 @@ function App() {
                 <Route exact path='/cart'>
                   <Cart/>
                 </Route>
-                <Route>
+                <Route exact path='/contacto'>
                   <Contacto/>
+                </Route>
+
+                <Route exact path='/nosotros'>
+                  <Nosotros/>
                 </Route>
             </Switch>
             <Footer/>

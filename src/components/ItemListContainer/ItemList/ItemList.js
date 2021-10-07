@@ -8,8 +8,10 @@ import Spinner from 'react-bootstrap/Spinner';
 import './ItemList.css';
 
 function ItemList() {
+
     const [itemList, setItemList] = useState([]) // estado inicial array itemList vacio
     
+
     const {categoryId} = useParams() // id categoria
     const [loading, setLoading]=useState(true)
 
