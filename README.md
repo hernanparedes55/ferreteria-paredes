@@ -25,8 +25,12 @@ Ferreteria Oreste es un e-commerce para la venta de productos de ferreteria. Est
 - React Router Dom para la navegación
 - SweetAlert para las alertas
 - Firebase como base de datos
-## Demo
-<img src="/Demo.gif" alt="Demo">
+## Demo de compra
+<img src="/DemoCompra.gif" alt="Demo">
+
+## Demo de contacto
+<img src="/DemoContacto.gif" alt="Demo">
+
 ### Autor
 Hernán Paredes
 
