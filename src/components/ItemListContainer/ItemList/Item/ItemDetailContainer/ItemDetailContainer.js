@@ -25,7 +25,7 @@ function ItemDetailContainer() {
     return (
         <>
         <div className='detail-container'>
-            <h2 className="detalle-tit">Detalles del Producto Seleccionado</h2>
+            <h2 className="detalle-tit">DETALLES DEL PRODUCTO SELECCIONADO</h2>
                 <ItemDetail item={item} />  {/*paso mi estado "item" a ItemDetail */}
         </div>
             

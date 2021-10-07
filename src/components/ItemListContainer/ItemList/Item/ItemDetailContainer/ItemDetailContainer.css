@@ -1,3 +1,4 @@
 .detalle-tit{
-    color: rgb(128, 142, 143);
+    color: var(--orange);
+    margin-top: 5rem;
 }

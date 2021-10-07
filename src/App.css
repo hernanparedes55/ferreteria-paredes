@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  
+  /* background-color: black; */
+  /* background-color: rgb(33,37,41); */
+  
 }
 
 .App-logo {
@@ -37,5 +41,13 @@
   }
 }
 h1,h2,h3,h5,h6{
-  color:rgb(128, 142, 143)
+  /* color: white; */
+  color: var(--orange);
+  font-weight: 700;
+  
+}
+
+h4{
+  color:var(--blue);
+  font-weight: 700;
 }

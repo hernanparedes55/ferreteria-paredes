@@ -18,13 +18,15 @@ function ItemList() {
 
             const db = getFirestore()
             const itemsCollection = db.collection('items')
-            const dbQuery = categoryId ?  itemsCollection.where('categoria', '==', categoryId) : itemsCollection
+            const dbQuery = categoryId ?  itemsCollection.where('categoryId', '==', categoryId) : itemsCollection
             dbQuery.get().then(resp => {
                 console.log(resp);
                 if (resp.size === 0) {
                     console.log('No hay productos')
                 }else{
+                   
                 setItemList(resp.docs.map(item=> ({id: item.id, ...item.data()}) ))}
+                
             })
             .finally(() => {
                 setLoading(false)
@@ -37,9 +39,12 @@ function ItemList() {
     return(
         
         <div className="row">
-            {loading && <Spinner animation="border" style={{color: "rgb(255,194,158)"}} /> /*loading*/ } 
+            {loading && <Spinner animation="border" style={{color: "rgba(204,100,28,100)"}} /> /*loading*/ }
+            
             {!loading &&itemList.map((item) => (   //recorro los objetos dentro de mi estado "itemList" y para cada objeto lo ingreso en compoente Item
-                <div className="col-sm-6 col-lg-3 col-12">
+                
+                <div className="list-cont col-md-4 col-lg-3">
+                    
                     <Item key={item.id} prodData= {item}/>
                 </div>
             ))} 

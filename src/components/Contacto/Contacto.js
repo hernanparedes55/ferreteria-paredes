@@ -37,7 +37,7 @@ function Contacto() {
     }
     return (
         <>
-        <h2>Envianos tus dudas!</h2>
+        <h2 style={{marginTop:"5rem"}}>ENVIANOS TUS DUDAS!</h2>
         <div className="form-consul-cont">
         <form className='formulario-consulta'
                         onSubmit={handlerSubmit}

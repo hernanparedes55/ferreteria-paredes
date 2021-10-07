@@ -10,6 +10,8 @@ import Cart from './components/Cart/Cart';
 import CartContextProvider from './context/CartContext';
 import Contacto from './components/Contacto/Contacto';
 import Carousel from './components/carousel/Carousel';
+import React from 'react';
+// import { getFirestore } from "./firebase/firebaseConfig";
 
 function App() {
 
@@ -25,7 +27,10 @@ function App() {
                 <Route exact path='/'>
                   <Carousel/>
                   <Cards/>
-                  <ItemListContainer greeting='Todos nuestros productos' item='item'/>
+                  
+                </Route>
+                <Route exact path='/products'>
+                  <ItemListContainer greeting='TODOS NUESTROS PRODUCTOS' item='item'/>
                 </Route>
                 <Route exact path='/category/:categoryId'> {/*"categoryId es un parametro dinamico que lo toma useParams() en ItemListContainer"*/}
                   <ItemListContainer/>

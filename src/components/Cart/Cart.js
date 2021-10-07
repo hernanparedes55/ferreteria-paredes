@@ -10,7 +10,7 @@ function Cart() {
     const {cartList,removeItem,costoTotal,cleanList}= useContext(CartContext)    
     return (
         <>
-        <h2>Carrito de compras</h2>
+        <h2>CARRITO DE COMPRAS</h2>
         {cartList.length === 0?
             <p>El carrito está vacio</p>
         :
