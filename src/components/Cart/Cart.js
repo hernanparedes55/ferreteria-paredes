@@ -4,6 +4,9 @@ import {ImCross} from 'react-icons/im';
 import "./Cart.css";
 import FormularioCart from './FormularioCart/FormularioCart';
 import BotonGenerico from '../BotonGenerico/BotonGenerico';
+import { Link } from "react-router-dom";
+import { Button } from 'react-bootstrap';
+
 
 function Cart() {
 
@@ -15,7 +18,7 @@ function Cart() {
             <p>El carrito está vacio</p>
         :
         <div>
-            <BotonGenerico onClick={cleanList} contenido={"Vaciar el carrito"}/>
+            <Button variant="danger"  onClick={cleanList}> Vaciar el Carrito </Button>
             <table>
                 <thead>
                 <tr>
@@ -36,6 +39,11 @@ function Cart() {
                 </tbody>
             </table>
             <p className="total">{`Total a pagar : $${costoTotal()}`} </p> 
+            <BotonGenerico contenido={
+                            <Link to={`/products`} className="text-decoration-none text-light" >
+                            Seguir Comprando
+                        </Link>
+                        }/>
             <div className="titulo-form">
                 <h3>Ingresá tus datos para enviar tu pedido</h3>
                 <FormularioCart/>

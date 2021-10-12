@@ -4,7 +4,8 @@ import {CartContext} from '../../../../../../context/CartContext';
 import ItemCount from './ItemCount/ItemCount';
 import './ItemDetail.css';
 import swal from 'sweetalert';
-
+import { Link } from "react-router-dom";
+import BotonGenerico from '../../../../../BotonGenerico/BotonGenerico';
 
 function ItemDetail({item={}}){
     
@@ -40,12 +41,15 @@ function ItemDetail({item={}}){
                 <p>Detalle: {item.description}</p>
                 <p>Precio: ${item.price}</p>
                 <ItemCount stock={item.stock} initial={1} onAdd={handleCount} />
+                <BotonGenerico contenido={
+                            <Link to={`/products`} className="text-decoration-none text-light" >
+                            Seguir Comprando
+                        </Link>
+                        }/>
         </div>
         
     )
 
 }
 
-
-
-export default ItemDetail
+export default ItemDetail;

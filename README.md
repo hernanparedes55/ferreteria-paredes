@@ -29,9 +29,11 @@ Ferreteria Oreste es un e-commerce para la venta de productos de ferreteria. Est
 <img src="/DemoCompra.gif" alt="Demo">
 
 ## Demo de contacto
+
 <img src="/DemoContacto.gif" alt="Demo">
 
 ### Autor
+
 Hernán Paredes
 
 
