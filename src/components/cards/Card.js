@@ -9,7 +9,7 @@ const Card = ({title, imageSource, text, url,greeting}) => {
       
       <div className="card text-center bg-dark animate__animated animate__fadeInUp">
         <div className="overflow">
-           <img src={imageSource} className="card-img-top "/>
+           <img src={imageSource} alt="Producto" className="card-img-top "/>
         </div>
         <div className="card-body text-light">
           <h4 className="card-title">{title}</h4>
@@ -18,7 +18,7 @@ const Card = ({title, imageSource, text, url,greeting}) => {
             text ? text : 'No existe descripción del producto'
             }
           </p>
-          <a href={url} className="btn btn-outline-secondary rounded-0" target="_blank">Ver el producto</a>
+          <a href={url} className="btn btn-outline-secondary rounded-0" target="_blank" rel="noopener noreferrer">Ver el producto</a>
         </div>
         </div>
       
