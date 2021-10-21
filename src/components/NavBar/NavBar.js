@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar,Container,Nav,NavDropdown, NavbarBrand,Form,FormControl,Button} from 'react-bootstrap';
-import{NavLink} from 'react-router-dom';
+import{Link} from 'react-router-dom';
 import CartWidget from "./CartWidget/CartWidget";
 import './NavBar.css';
 
@@ -11,23 +11,23 @@ return (
 <>
 <Navbar expand="sm" className="style-NavBar">
   <Container>
-    <NavbarBrand><NavLink to="/"><img src='/images/logoFerreteria.png' width="25%"alt="logo" /></NavLink></NavbarBrand>
+    <NavbarBrand><Link to="/"><img src='/images/logoFerreteria.png' width="25%"alt="logo" /></Link></NavbarBrand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto navegacion">
-        <Nav.Link ><NavLink to="/" className='link-nav'  exact activeClassName="link-activo">Inicio</NavLink></Nav.Link>
-        <Nav.Link ><NavLink to="/products" className='link-nav'  exact activeClassName="link-activo">Productos</NavLink></Nav.Link>
+        <Nav.Link ><Link to="/" className='link-nav'  activeclassname="link-activo">Inicio</Link></Nav.Link>
+        <Nav.Link ><Link to="/products" className='link-nav'   activeclassname="link-activo">Productos</Link></Nav.Link>
 
-        <NavDropdown title="Categorias" id="collasible-nav-dropdown" className='link-nav'  exact activeClassName="link-activo" >
-          <NavDropdown.Item ><Nav.Link><NavLink to="/category/Electricidad" className='link-nav'  exact activeClassName="link-activo" > Electricidad </NavLink></Nav.Link></NavDropdown.Item>
-          <NavDropdown.Item><Nav.Link ><NavLink to="/category/Herramientas" className='link-nav'  exact activeClassName="link-activo"> Herramientas </NavLink></Nav.Link></NavDropdown.Item>
-          <NavDropdown.Item><Nav.Link ><NavLink to="/category/Jardineria" className='link-nav'  exact activeClassName="link-activo"> Jardineria </NavLink></Nav.Link></NavDropdown.Item>
+        <NavDropdown title="Categorias" id="collasible-nav-dropdown" className='link-nav'  activeclassname="link-activo" >
+          <NavDropdown.Item><Nav.Link><Link to="/category/Electricidad" className='link-nav'   activeclassname="link-activo" > Electricidad </Link></Nav.Link></NavDropdown.Item>
+          <NavDropdown.Item><Nav.Link ><Link to="/category/Herramientas" className='link-nav'   activeclassname="link-activo"> Herramientas </Link></Nav.Link></NavDropdown.Item>
+          <NavDropdown.Item><Nav.Link ><Link to="/category/Jardineria" className='link-nav'   activeclassname="link-activo"> Jardineria </Link></Nav.Link></NavDropdown.Item>
           {/* <NavDropdown.Item href="#action/3.2">Sanitarios</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Cloacas</NavDropdown.Item> */}
           </NavDropdown>
                
-        <Nav.Link ><NavLink to="/contacto" className='link-nav'  exact activeClassName="link-activo">Contacto</NavLink></Nav.Link>
-        <Nav.Link ><NavLink to="/nosotros" className='link-nav'  exact activeClassName="link-activo">Nosotros</NavLink></Nav.Link>
+        <Nav.Link ><Link to="/contacto" className='link-nav'   activeClassName="link-activo">Contacto</Link></Nav.Link>
+        <Nav.Link ><Link to="/nosotros" className='link-nav'   activeClassName="link-activo">Nosotros</Link></Nav.Link>
         <Form className="d-flex">
         <FormControl
         type="search"

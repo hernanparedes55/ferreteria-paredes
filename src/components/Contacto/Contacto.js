@@ -47,18 +47,18 @@ function Contacto() {
                             type='text'
                             placeholder='Nombre' 
                             name='nombre'
-                            value={consultor.nombre}
+                            defaultValue={consultor.nombre}
                         />
                         <input 
                             type='email' 
                             placeholder='E-mail' 
                             name='mail'
-                            value={consultor.mail}
+                            defaultValue={consultor.mail}
                         />
                         <textarea
                             placeholder='Escribí aquí tu consulta' 
                             name='txtConsulta'
-                            value={consultor.txtConsulta}
+                            defaultValue={consultor.txtConsulta}
                         />
                         <div>
                             <BotonGenerico contenido ={'Enviar'}/>
