@@ -1,8 +1,14 @@
 .App {
   text-align: center;
+ 
   
   /* background-color: black; */
   /* background-color: rgb(33,37,41); */
+  
+}
+
+html {
+  min-height: 100%;
   
 }
 
@@ -26,6 +32,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {

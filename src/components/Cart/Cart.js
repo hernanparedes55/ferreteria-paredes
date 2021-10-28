@@ -13,12 +13,12 @@ function Cart() {
     const {cartList,removeItem,costoTotal,cleanList}= useContext(CartContext)    
     return (
         <>
-        <h2>CARRITO DE COMPRAS</h2>
+        <h2 style={{marginTop:"5rem",height:"5vh"}}>CARRITO DE COMPRAS</h2>
         {cartList.length === 0?
-            <p>El carrito está vacio</p>
+            <p style={{marginTop:"3rem",marginBottom:"7rem", height:"8.5vh"}}>El carrito está vacio</p>
         :
         <div>
-            <Button variant="danger"  onClick={cleanList}> Vaciar el Carrito </Button>
+            <Button style={{marginTop:"2rem"}} variant="danger"  onClick={cleanList}> Vaciar el Carrito </Button>
             <table>
                 <thead>
                 <tr>
@@ -47,6 +47,7 @@ function Cart() {
             <div className="titulo-form">
                 <h3>Ingresá tus datos para enviar tu pedido</h3>
                 <FormularioCart/>
+                
             </div>
         </div>
         }

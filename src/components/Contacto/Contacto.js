@@ -5,10 +5,21 @@ import {getFirestore} from '../../firebase/firebaseConfig';
 import swal from 'sweetalert';
 
 function Contacto() {
+    
+    const initialState = {
+        nombre:'',
+        txtConsulta:'',
+        mail:'',
+    } 
+
+    // State para mostrar el error de la validación
+    const [error, setError] = useState(false);    
 
     const [consultor, setConsultor] = useState(initialState)
     const consulta = {consultor } //
-
+    
+    // Extraer los valores
+    const {nombre, email, txtConsulta} = consultor;
 
     const handlerChange = (evt)=>{
         setConsultor({
@@ -16,28 +27,42 @@ function Contacto() {
             [evt.target.name]: evt.target.value,
         })
     }
-
+    
     const handlerSubmit=(evt)=>{
         evt.preventDefault()
         
+
         const db = getFirestore()
         db.collection('consulta').add(consulta)
 
+
         .then(({id})=>{
+            if(nombre === '' || email ==='' || txtConsulta === ''){
+                setError(true);
+                return;}
+     
+ 
             swal({
                 title:`Consulta enviada!`,
                 text:`La identificacion de consulta es : ${id}`,
                 icon:"success",
                 height: "340px"
             })
-            setConsultor(initialState)
+
+            setError(false);
+            setConsultor(initialState);
+            
         })
         .catch(err=>console.log(err))
-        
-    }
+    
+    
+}
     return (
         <>
         <h2 style={{marginTop:"5rem"}}>ENVIANOS TUS DUDAS!</h2>
+
+        {error ? <p className="alerta-error">Todos los campos son obligatorios</p> : null}
+
         <div className="form-consul-cont">
         <form className='formulario-consulta'
                         onSubmit={handlerSubmit}
@@ -50,9 +75,9 @@ function Contacto() {
                             defaultValue={consultor.nombre}
                         />
                         <input 
-                            type='email' 
+                            type='email'
                             placeholder='E-mail' 
-                            name='mail'
+                            name='email'
                             defaultValue={consultor.mail}
                         />
                         <textarea
@@ -71,8 +96,4 @@ function Contacto() {
 
 export default Contacto
 
-const initialState ={
-    nombre:'',
-    txtConsulta:'',
-    mail:'',
-} 
+

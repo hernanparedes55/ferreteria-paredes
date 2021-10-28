@@ -1,11 +1,15 @@
 .pie-de-pagina{
-    margin-top: 100px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    top: 5rem;
     background: rgb(36,68,116);
     background: linear-gradient(90deg, rgba(36,68,116,1) 0%, rgba(53,96,161,1) 75%, rgba(53,104,180,1) 100%);
     color:white;
-    align-items: center;
-    justify-content: center;
-
+    position: relative;
+    /* align-items: center;
+    justify-content: center; */
+        
 }
 
 .pie-de-pagina a{
@@ -22,3 +26,4 @@
 img{
     width: 144px;
 }
+

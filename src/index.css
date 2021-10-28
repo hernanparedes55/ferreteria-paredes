@@ -3,17 +3,25 @@
   --blue: #244474;
   --orange: #Cc641c;
   --grey: #474B4E;
+  
+}
+
+html {
+  min-height: 100%;
+  position: relative;
 }
 
 body {
-  margin: 0;
+  
   /* font-family: 'PT Sans', sans-serif; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
   
+
 }
 
 code {
