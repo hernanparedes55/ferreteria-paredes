@@ -30,7 +30,7 @@ function Cart() {
                 <tbody>
                 {cartList.map(item => 
                     <tr key = {item.item.id}>
-                        <td><img src={item.item.imgDir} width='30px' height='40px' alt="" /><p>{item.item.title}</p></td>
+                        <td><img src={item.item.imgDir} width='20rem' height='90rem' alt="" /><p>{item.item.title}</p></td>
                         <td>{item.itemQ}</td>
                         <td>${item.item.price*item.itemQ}</td>
                         <td><ImCross className="remove"onClick={()=>{removeItem(item)}}/></td> 

@@ -18,6 +18,8 @@ function FormularioCart() {
     const {nombre, apellido, domicilio, provincia, postcode, telefono, mail} = buyer;
 
     const handlerChange = (evt)=>{
+        evt.preventDefault()
+        
         setBuyer({
             ...buyer,
             [evt.target.name]: evt.target.value,
@@ -61,42 +63,49 @@ function FormularioCart() {
                             placeholder='Nombre' 
                             name='nombre'
                             value={buyer.nombre}
+                            onChange={handlerChange}
                         />
                         <input 
                             type='text' 
                             placeholder='Apellido' 
                             name='apellido'
                             value={buyer.apellido}
+                            onChange={handlerChange}
                         />
                         <input 
                             type='text' 
                             placeholder='Domicilio' 
                             name='domicilio'
                             value={buyer.domicilio}
+                            onChange={handlerChange}
                         />
                         <input 
                             type='text' 
                             placeholder='Provincia' 
                             name='provincia'
                             value={buyer.provincia}
+                            onChange={handlerChange}
                         />
                         <input 
                             type='text' 
                             placeholder='Codigo Postal' 
                             name='postcode'
                             value={buyer.postcode}
+                            onChange={handlerChange}
                         />
                         <input 
                             type='tel' 
                             placeholder='Telefono' 
                             name='telefono'
                             value={buyer.telefono}
+                            onChange={handlerChange}
                         />
                         <input 
                             type='email' 
                             placeholder='E-mail' 
                             name='mail'
                             value={buyer.mail}
+                            onChange={handlerChange}
                         />
                         <div>
                             <BotonGenerico contenido ={ "Realizar compra"}/>

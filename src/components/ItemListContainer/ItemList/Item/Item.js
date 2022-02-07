@@ -9,7 +9,7 @@ import './Item.css';
 function Item({ prodData }) {
     const {id, title, description, price, imgDir, stock} = prodData
     return(
-                <Card style={{ width: '18rem'}} className="col-md-5 card-prod">
+                <Card style={{width: '18rem', padding: '2rem'}} className="col-md-4 card-prod">
                     <Card.Img variant="top" src={imgDir} alt= {title} />
                     <Card.Body>
                         <Card.Title style={{color:"var(--blue)"}}>{title}</Card.Title>

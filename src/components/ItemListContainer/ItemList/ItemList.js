@@ -45,9 +45,9 @@ function ItemList() {
             
             {!loading &&itemList.map((item) => (   //recorro los objetos dentro de mi estado "itemList" y para cada objeto lo ingreso en compoente Item
                 
-                <div className="list-cont col-md-4 col-lg-3">
+                <div key={item.id} className="list-cont col-md-3 col-lg-4">
                     
-                    <Item key={item.id} prodData= {item}/>
+                    <Item  prodData= {item}/>
                 </div>
             ))} 
         </div>

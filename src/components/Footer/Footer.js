@@ -15,7 +15,7 @@ function Footer() {
                 <div className="col-md-3 col-sm-6">
                     <NavLink to="/"><img src='/images/logoFerreteria.png' width="25%"alt="logo" /></NavLink>
                     </div>
-                    <div className="col-md-6 col-sm-6">
+                    <div className="col-md-6 col-sm-4">
                         <ul className="list-unstyled">
                             <li>Maestro Vidal 464</li>
                             <li>351-2266417</li>

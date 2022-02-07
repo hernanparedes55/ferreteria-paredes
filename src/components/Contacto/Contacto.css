@@ -1,5 +1,6 @@
 .form-consul-cont{
     display: flex;
+    margin-bottom: 3rem;
 }
 
 .form-consul-cont .formulario-consulta{
@@ -7,6 +8,7 @@
     flex-direction: column;
     width: 75%;
     margin: auto;
+    
 }
 
 
@@ -15,6 +17,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
+    background-color: #eeeef5;
 }
 .form-consul-cont .formulario-consulta textarea{
     margin: 20px;
@@ -22,6 +25,7 @@
     border-left: none;
     border-right: none;
     height: 150px;
+    background-color: #eeeef5;
 }
 
 .alerta-error{

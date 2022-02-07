@@ -2,7 +2,7 @@
     text-decoration: solid;
     border: none;
     margin: 0.5rem;
-    background-color: white;
+    background-color: #eeeef5;
 
 }
 
@@ -12,6 +12,7 @@
     margin: 0.5rem;
     background-color: white;
     color: var(--grey);
+    background-color: #eeeef5;
 
 }
 .btn-agregar p {

@@ -4,7 +4,7 @@ import * as ReactBootStrap from "react-bootstrap";
 
 const Carousel = () => {
     return (
-        <div>
+        <div style={{position:"static" , bottom:"-20rem"}}>
             <ReactBootStrap.Carousel>
               <ReactBootStrap.Carousel.Item>
                 <img

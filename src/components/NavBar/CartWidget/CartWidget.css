@@ -4,8 +4,18 @@
     align-items: center;
     margin-left:1.5rem;
     color:var(--orange);
-    margin-top: 1.2rem;
+    margin-top: 0.5rem;
+    
 }
+
+@media screen and (max-width: 300px) {
+    .icono-carrito{
+        display: none;
+        
+    }
+}
+
+
 .icono-carrito:hover{
     color:rgb(255,194,158);
     transition: 0.5s;

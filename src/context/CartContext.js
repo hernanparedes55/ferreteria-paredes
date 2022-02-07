@@ -6,6 +6,7 @@ export const CartContext = createContext();
 export default function UseCartContext({ children }){
 
   const [cartList, setCartList] = useState([]); // {nombre: nombre, precio:precio,itemQ: qty} 
+  
 
   function guardarItem(newItem) {
     const index = cartList.findIndex( item => newItem.item.id=== item.item.id) // si no lo encuentra me devuelve -1, si lo encuentra me duelve la posicion 
@@ -19,8 +20,9 @@ export default function UseCartContext({ children }){
     }
     
     
+
   }   
-//elimimina un producto del carrito
+//elimina un producto del carrito
   const removeItem=(oldItem)=>{
     const oldList = cartList.filter(item=> item.item.id !== oldItem.item.id)
     setCartList(oldList)
@@ -37,6 +39,15 @@ export default function UseCartContext({ children }){
     setCartList([])
   }
 
+  //acumulador de cantidades
+  const totalQuantity = ()=>{
+    let quantity = 0;
+    cartList.forEach((product) => {
+      quantity += Number(product.itemQ)
+    });
+    return quantity; 
+  };
+  
 
   return (
     <CartContext.Provider value={{
@@ -45,7 +56,8 @@ export default function UseCartContext({ children }){
         removeItem,
         costoTotal,
         cleanList,
-        guardarItem
+        guardarItem,
+        totalQuantity
       }}
     >
       {children}

@@ -10,22 +10,22 @@ const cards = [
         id: 1,
         title: 'ESCALERA ARTICULADA 👷',
         image: producto1,
-        text: '- 4 Tramos de 3 peldaños cada uno - Altura total 3.71m - Mas de 7 posiciones de uso',
+        text: '🔸 4 Tramos de 3 peldaños c/uno 🔸 Altura total 3.71m 🔸 + de 7 posiciones de uso',
         url: 'https://www.instagram.com/p/CMezSMQgYoo/'
         
     },
     {
         id: 2,
-        title: '🖌️LATEX INTERIOR/EXTERIOR',
+        title: 'LATEX INTERIOR/EXTERIOR 🖌️',
         image: producto2,
-        text: '🔸 Trabajamos con las líneas Murella y Miura.🔸 Tarros de 20, 10 y 4 litros. 🔸 Excelente calidad!',
+        text: '🔸 Trabajamos con las líneas Murella y Miura. 🔸 Tarros de 20, 10 y 4 lts.',
         url: 'https://www.instagram.com/p/CNIBr3anufM/'
     },
     {
         id: 3,
         title: 'ORDEADORA COBERPLAST 🌱',
         image: producto3,
-        text: '🔸Mantené tu patio siempre lindo y prolijo. ➡️Uso doméstico!',
+        text: '🔸Mantené tu patio siempre lindo y prolijo. 🔸 Uso doméstico!',
         url: 'https://www.instagram.com/p/CSMhs8dAnw6/'
     },
 ]
