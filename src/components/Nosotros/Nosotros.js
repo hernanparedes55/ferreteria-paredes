@@ -5,7 +5,7 @@ const Nosotros = () => {
     return (
         <div className='nosotrosGlobal'>
             <img
-                style={{width:"30rem", height:"25rem" , float:"left"}}                
+                //style={{width:"30rem", height:"25rem" , float:"left"}}                
                 // className="d-block w-50"
                 src="images/Nosotros.png"
                 alt="Nosotros"

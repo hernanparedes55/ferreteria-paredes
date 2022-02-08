@@ -9,6 +9,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
+    background-color: #eeeef5;
 }
 .swal-modal{
     height: 300px;

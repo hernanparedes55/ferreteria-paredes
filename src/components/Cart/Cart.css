@@ -1,9 +1,19 @@
 table{
-    width: 50rem;
+    width: 60rem;
     margin-top: 5rem;
     margin: 2rem 10rem;
-
+    
+    
 }
+
+@media screen and (max-width: 960px) {
+    table{
+        width: auto;
+        margin: 2rem 4rem;
+    }
+}
+
+
 .total{
     color: var(--blue); 
     font-size: 20px;
